@@ -48,8 +48,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     print("invalid url: \(error.localizedDescription)")
                 case .canNotProcessData:
                     print("canNotProcessData: \(error.localizedDescription)")
-                case .encodingEror:
+                case .encodingError:
                     print("Encoding Error: \(error.localizedDescription)")
+                case .statusCodeIsNotOkay:
+                    print("StatusCodeIsNot200 \(error)")
                 }
             }
         }

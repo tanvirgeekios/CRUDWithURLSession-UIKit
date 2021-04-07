@@ -97,14 +97,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgQ-mC-juZ">
-                                <rect key="frame" x="96" y="600" width="222" height="126"/>
-                                <color key="backgroundColor" red="0.60744959119999997" green="0.14504539969999999" blue="0.12380144749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Create Post">
-                                    <color key="titleColor" systemColor="systemYellowColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnt-I1-FrB">
+                                <rect key="frame" x="161.5" y="693" width="91" height="41"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="GOo-yH-zPE"/>
+                                </constraints>
+                                <state key="normal" title="Update Post">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="createPostBTNPressed:" destination="74i-c0-tae" eventType="touchUpInside" id="hw2-xs-l0k"/>
+                                    <action selector="updateBTNPressed:" destination="74i-c0-tae" eventType="touchUpInside" id="kld-H3-vTz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lg-1q-ele">
+                                <rect key="frame" x="161.5" y="755" width="91" height="30"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Delete a Post">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteAPost:" destination="74i-c0-tae" eventType="touchUpInside" id="aDR-wR-yen"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXg-MR-jAW">
+                                <rect key="frame" x="105" y="614" width="205" height="30"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Create a Post">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createBTNPressed:" destination="74i-c0-tae" eventType="touchUpInside" id="LTZ-vd-9GV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -112,21 +135,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qwi-M5-yJE" firstAttribute="trailing" secondItem="Lux-Pg-2R6" secondAttribute="trailing" id="09D-Lj-UJ8"/>
+                            <constraint firstItem="3lg-1q-ele" firstAttribute="top" secondItem="Bnt-I1-FrB" secondAttribute="bottom" constant="21" id="63B-bD-E67"/>
                             <constraint firstItem="Lux-Pg-2R6" firstAttribute="top" secondItem="qwi-M5-yJE" secondAttribute="bottom" constant="70" id="70O-F5-C3H"/>
+                            <constraint firstItem="oaI-Bx-IQW" firstAttribute="bottom" secondItem="3lg-1q-ele" secondAttribute="bottom" constant="77" id="7WH-KG-sz7"/>
                             <constraint firstItem="0LQ-1m-Kjy" firstAttribute="leading" secondItem="oaI-Bx-IQW" secondAttribute="leading" constant="96" id="8FA-50-106"/>
-                            <constraint firstItem="BgQ-mC-juZ" firstAttribute="top" secondItem="Lux-Pg-2R6" secondAttribute="bottom" constant="70" id="A8R-sw-V93"/>
+                            <constraint firstItem="eXg-MR-jAW" firstAttribute="leading" secondItem="oaI-Bx-IQW" secondAttribute="leading" constant="105" id="9Wc-sz-KWI"/>
                             <constraint firstItem="qwi-M5-yJE" firstAttribute="top" secondItem="rSn-3q-vQc" secondAttribute="bottom" constant="58" id="BJm-eX-D7x"/>
                             <constraint firstItem="rSn-3q-vQc" firstAttribute="leading" secondItem="qwi-M5-yJE" secondAttribute="leading" id="C9K-KJ-FQ0"/>
-                            <constraint firstItem="Lux-Pg-2R6" firstAttribute="leading" secondItem="BgQ-mC-juZ" secondAttribute="leading" id="E8N-8N-v1O"/>
                             <constraint firstItem="0LQ-1m-Kjy" firstAttribute="leading" secondItem="rSn-3q-vQc" secondAttribute="leading" id="F4B-qg-MiG"/>
                             <constraint firstItem="qwi-M5-yJE" firstAttribute="leading" secondItem="Lux-Pg-2R6" secondAttribute="leading" id="Ieb-xu-9cj"/>
                             <constraint firstItem="rSn-3q-vQc" firstAttribute="top" secondItem="0LQ-1m-Kjy" secondAttribute="bottom" constant="40" id="RaR-ki-gNA"/>
+                            <constraint firstItem="eXg-MR-jAW" firstAttribute="centerX" secondItem="Lux-Pg-2R6" secondAttribute="centerX" id="SwA-Mv-rpK"/>
                             <constraint firstItem="rSn-3q-vQc" firstAttribute="trailing" secondItem="qwi-M5-yJE" secondAttribute="trailing" id="U4m-jP-aQL"/>
                             <constraint firstItem="0LQ-1m-Kjy" firstAttribute="centerX" secondItem="MFB-l0-rkR" secondAttribute="centerX" id="XCB-8y-eNZ"/>
                             <constraint firstItem="0LQ-1m-Kjy" firstAttribute="top" secondItem="oaI-Bx-IQW" secondAttribute="top" constant="138" id="aYU-2S-rxo"/>
-                            <constraint firstItem="Lux-Pg-2R6" firstAttribute="trailing" secondItem="BgQ-mC-juZ" secondAttribute="trailing" id="mO2-Dc-XuR"/>
+                            <constraint firstItem="Bnt-I1-FrB" firstAttribute="top" secondItem="eXg-MR-jAW" secondAttribute="bottom" constant="49" id="hTx-Rp-5qR"/>
                             <constraint firstItem="0LQ-1m-Kjy" firstAttribute="trailing" secondItem="rSn-3q-vQc" secondAttribute="trailing" id="oKN-8T-awe"/>
-                            <constraint firstItem="oaI-Bx-IQW" firstAttribute="bottom" secondItem="BgQ-mC-juZ" secondAttribute="bottom" constant="136" id="vnl-6t-dXr"/>
+                            <constraint firstItem="Bnt-I1-FrB" firstAttribute="leading" secondItem="3lg-1q-ele" secondAttribute="leading" id="vOC-gR-BOs"/>
+                            <constraint firstItem="eXg-MR-jAW" firstAttribute="centerX" secondItem="Bnt-I1-FrB" secondAttribute="centerX" id="wM4-B8-0Dn"/>
+                            <constraint firstItem="Bnt-I1-FrB" firstAttribute="trailing" secondItem="3lg-1q-ele" secondAttribute="trailing" id="zIL-jb-edR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Create A Post" id="7Bg-7J-ugG"/>
@@ -163,9 +190,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
